@@ -2,12 +2,12 @@ FROM node:20-alpine
 
 RUN apk add --no-cache git
 
-RUN git clone --depth=1 https://github.com/rorb9513123/real12312.git
+RUN git clone --depth=1 https://github.com/rorb9513123/321.git
 
-WORKDIR /real12312
+WORKDIR /321
 
-RUN npm install
+RUN pnpm install
 
-CMD npm start
+CMD pnpm start
 
 EXPOSE 8080
